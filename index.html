@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio • <span id="site-name-fallback">Your Name</span></title>
+  <meta name="description" content="Portfolio of projects and work by Your Name." />
+  <meta property="og:title" content="Your Name • Portfolio" />
+  <meta property="og:description" content="Selected projects, skills, and contact." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --card: #121214;
+      --card-2: #16161a;
+      --text: #eaeaea;
+      --muted: #b8b8b8;
+      --brand: #6ee7ff;
+      --brand-2: #7c3aed;
+      --ring: rgba(110,231,255,0.3);
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.45);
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--bg); color: var(--text); margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
+    header { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; padding: 20px; background: linear-gradient(90deg, rgba(124,58,237,.15), rgba(110,231,255,.15)); border-radius: var(--radius); box-shadow: var(--shadow); }
+    header .title { display: flex; gap: 16px; align-items: center; }
+    .avatar { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--brand); }
+    .name { font-size: 28px; font-weight: 800; letter-spacing: .2px; }
+    .tagline { color: var(--muted); margin-top: 4px; }
+    .meta { text-align: right; }
+    .socials a { margin-left: 12px; }
+    section { margin: 36px 0; }
+    h2 { font-size: 22px; margin: 0 0 12px 0; }
+    .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; border: 1px solid #1f1f24; }
+    .about { line-height: 1.65; color: #dcdcdc; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip { background: var(--card-2); border: 1px solid #222228; border-radius: 999px; padding: 8px 12px; font-size: 14px; color: #d8d8d8; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+    .project { grid-column: span 12; display: grid; grid-template-columns: 1fr; gap: 12px; }
+    .project .media { width: 100%; border-radius: 12px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid #25252c; }
+    .project .title { font-size: 18px; font-weight: 700; }
+    .project .desc { color: #d6d6d8; }
+    .project .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+    .project .tag { font-size: 12px; background: #1c1c22; padding: 6px 10px; border-radius: 999px; border: 1px solid #2a2a33; color: #bfc2ff; }
+    .project .links { display: flex; gap: 12px; margin-top: 10px; }
+    .cta { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(90deg, var(--brand-2), var(--brand)); border: none; color: #001014; padding: 10px 14px; border-radius: 10px; font-weight: 700; text-decoration: none; }
+    footer { color: var(--muted); text-align: center; padding: 24px 0 36px; }
+    @media (min-width: 720px) {
+      .project { grid-column: span 6; }
+    }
+    @media (min-width: 1060px) {
+      .project { grid-column: span 4; }
+    }
+
+    /* Skill Areas (image + text containers) */
+    .skill-cards { display: grid; gap: 18px; margin-top: 18px; grid-template-columns: 1fr; }
+    @media (min-width: 680px) {
+      .skill-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .skill-cards { grid-template-columns: repeat(3, 1fr); }
+    }
+        
+    .skill-card { background: var(--card); border: 1px solid #1e1e24; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .skill-card-inner { display: block; }
+    .skill-card .media { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; border-bottom: 1px solid #23232a; }
+    .skill-card .body { padding: 18px; display: grid; gap: 10px; }
+    .skill-card .title { font-size: 18px; font-weight: 800; letter-spacing:.2px; }
+    .skill-card .text { color: #d6d6d8; line-height: 1.65; }
+    .skill-card .actions { display: flex; gap: 12px; margin-top: 6px; flex-wrap: wrap; }
+    @media (min-width: 680px) { .skill-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .skill-cards { grid-template-columns: repeat(3, 1fr); } }
+      .skill-card .media { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; border-bottom: 1px solid #23232a; }
+    }
+
+
+    .cta { display: inline-flex; align-items: center; gap: 8px; }
+    .cta .icon { width: 16px; height: 16px; display: inline-block; }
+    
+    .skill-card:hover { transform: translateY(-4px); border-color:#2b2b34; box-shadow: 0 14px 36px rgba(0,0,0,.5); }
+
+    /* Global GitHub button under Projects */
+    .github-section { display: flex; justify-content: center; margin-top: 22px; }
+    .github-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 12px 16px; border-radius: 6px; border: 1px solid #2a2a30;
+      background: #1b1b20; color: #fff; text-decoration: none; font-weight: 700;
+      box-shadow: 0 8px 22px rgba(0,0,0,.35);
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease;
+    }
+    .github-btn:hover { background: #22222a; border-color: #34343b; box-shadow: 0 12px 30px rgba(0,0,0,.45); transform: translateY(-2px); }
+    .github-btn .icon { width: 18px; height: 18px; display: inline-block; }
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="card">
+      <div class="title">
+        <img class="avatar" src="assets/profile.png" alt="Profile photo" />
+        <div>
+          <div class="name" id="name">Pakin Kajonsuksanti</div>
+          <div class="tagline" id="tagline">Developer</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div id="location">Bellingham, United States</div>
+        <div class="socials" id="socials">
+          <!-- filled by script -->
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="card about">
+        <h2>About</h2>
+        <p id="about">Hi, I’m Deon — a student pursuing a degree in Cybersecurity and Computer Information Systems. I love coding, building tools that make life easier, and contributing to my community. Outside of tech, I do voice acting as a hobby and dabble in graphic design and 3D modeling.</p>
+        <p>Contact: <a id="email" href="mailto:you@example.com">donhnt@outlook.com</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="skills" id="skills"></div>
+
+    <section>
+      <h2>Skill Areas</h2>
+      <!-- Hardcoded placeholders; replace images and text as needed -->
+      <div class="skill-cards">
+        <div class="skill-card">
+          <div class="skill-card-inner">
+            <img class="media" src="assets/skill1.png" alt="Skill area image 1">
+            <div class="body">
+              <div class="title">Software Development (Primary: Java)</div>
+              <div class="text">Creative Software Development — Passion for designing and building unique programs from the ground up. I enjoy turning ideas into functional tools with a personal touch, blending creativity with solid coding practices.</div>
+              <div class="actions">
+                <a class="cta" href="#projects">See projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-inner">
+            <img class="media" src="assets/skill2.png" alt="Skill area image 2">
+            <div class="body">
+              <div class="title">Individual / Team Development</div>
+              <div class="text">Designed and managed server systems; created custom games both individually and collaboratively with a large group, occasionally assisting in project leadership with other creators and developers — particularly within Minecraft-based projects.</div>
+              <div class="actions">
+                <a class="cta" href="#projects">Open repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-inner">
+            <img class="media" src="assets/skill3.png" alt="Skill area image 3">
+            <div class="body">
+              <div class="title">Interdepartmental Support and Service</div>
+              <div class="text">Provided customer support with a focus on problem solving and effective communication between departments to ensure smooth operations and client satisfaction.</div>
+              <div class="actions">
+                <a class="cta" href="mailto:replace-me@example.com">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <div class="skill-cards" id="skill-sections"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="github-section">
+        <a class="github-btn" href="https://github.com/ZeroC0deT1me" target="_blank" rel="noopener">
+          <img class="icon" src="assets/github.svg" alt="GitHub logo">
+          <span>Check GitHub</span>
+        </a>
+      </div>
+
+      <div class="grid" id="projects"></div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Hire / Collaborate</h2>
+        <p>Open to interesting work and collaborations. Reach out via email or any of the socials above.</p>
+        <a class="cta" id="cta" href="mailto:you@example.com">Contact Me</a>
+      </div>
+    </section>
+
+    <footer>
+      <small>&copy; <span id="year"></span> <span id="footer-name">Pakin Kajonsuksanti</span> 2025</small>
+    </footer>
+  </div>
+
+  <script>
+  async function loadSite() {
+    try {
+      const res = await fetch('site.json');
+      const data = await res.json();
+
+      document.getElementById('name').textContent = data.name;
+      document.getElementById('footer-name').textContent = data.name;
+      document.getElementById('tagline').textContent = data.tagline;
+      document.getElementById('location').textContent = data.location;
+      document.getElementById('about').textContent = data.about;
+      document.getElementById('email').href = 'mailto:' + data.email;
+      document.getElementById('email').textContent = data.email;
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Socials
+      const socials = document.getElementById('socials');
+      socials.innerHTML = '';
+      (data.socials || []).forEach(s => {
+        const a = document.createElement('a');
+        a.href = s.url;
+        a.textContent = s.name;
+        a.target = "_blank";
+        a.rel = "noopener";
+        socials.appendChild(a);
+      });
+
+      // Skills
+      const skills = document.getElementById('skills');
+      skills.innerHTML = '';
+      (data.skills || []).forEach(skill => {
+        const span = document.createElement('span');
+        span.className = 'chip';
+        span.textContent = skill;
+        skills.appendChild(span);
+      });
+
+      // Projects
+      const projects = document.getElementById('projects');
+      projects.innerHTML = '';
+      (data.projects || []).forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'card project';
+
+        const img = document.createElement('img');
+        img.className = 'media';
+        img.src = p.image || 'assets/project1.png';
+        img.alt = p.title;
+        card.appendChild(img);
+
+        const title = document.createElement('div');
+        title.className = 'title';
+        title.textContent = p.title;
+        card.appendChild(title);
+
+        const desc = document.createElement('div');
+        desc.className = 'desc';
+        desc.textContent = p.desc;
+        card.appendChild(desc);
+
+        const tags = document.createElement('div');
+        tags.className = 'tags';
+        (p.tags || []).forEach(t => {
+          const tag = document.createElement('span');
+          tag.className = 'tag';
+          tag.textContent = t;
+          tags.appendChild(tag);
+        });
+        card.appendChild(tags);
+
+        const links = document.createElement('div');
+        links.className = 'links';
+
+        let githubUrl = null;
+        (p.links || []).forEach(l => {
+          const a = document.createElement('a');
+          a.className = 'cta';
+          a.href = l.url;
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.textContent = l.label;
+          links.appendChild(a);
+          if (!githubUrl && typeof l.url === 'string' && l.url.includes('github.com')) {
+            githubUrl = l.url;
+          }
+        });
+
+        if (githubUrl) {
+          const gh = document.createElement('a');
+          gh.className = 'cta';
+          gh.href = githubUrl;
+          gh.target = '_blank';
+          gh.rel = 'noopener';
+          const icon = document.createElement('img');
+          icon.src = 'assets/github.svg';
+          icon.alt = '';
+          icon.className = 'icon';
+          gh.appendChild(icon);
+          const span = document.createElement('span');
+          span.textContent = 'Check GitHub';
+          gh.appendChild(span);
+          links.appendChild(gh);
+        }
+
+        card.appendChild(links);
+
+        projects.appendChild(card);
+      });
+
+    } catch (e) {
+      console.error('Failed to load site.json', e);
+    }
+  }
+  loadSite();
+  </script>
+</body>
+</html>

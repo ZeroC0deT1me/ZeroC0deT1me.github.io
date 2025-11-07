@@ -1,0 +1,111 @@
+{
+  "name": "[Replace: Your Name]",
+  "tagline": "[Replace: Your headline (e.g., Java Developer \u2022 Minecraft Modder)]",
+  "location": "[Replace: City, Country]",
+  "email": "replace-me@example.com",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/[your-username]"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/[your-handle]/"
+    },
+    {
+      "name": "X",
+      "url": "https://x.com/[your-handle]"
+    }
+  ],
+  "about": "[Replace: Short intro about you \u2014 what you build, your focus areas, and what you're exploring now.]",
+  "skills": [
+    "[Replace] Java",
+    "[Replace] Minecraft Modding",
+    "[Replace] Linux",
+    "[Replace] Git",
+    "[Replace] HTML/CSS",
+    "[Replace] Python"
+  ],
+  "projects": [
+    {
+      "title": "[Replace] Project One Title",
+      "desc": "[Replace] One-sentence summary of what this project does and why it matters.",
+      "tags": [
+        "[Replace] Java",
+        "[Replace] Desktop"
+      ],
+      "image": "assets/project1.png",
+      "links": [
+        {
+          "label": "Repo",
+          "url": "https://github.com/[your-username]/[repo-name]"
+        }
+      ]
+    },
+    {
+      "title": "[Replace] Project Two Title",
+      "desc": "[Replace] Brief description, outcomes, and your role.",
+      "tags": [
+        "[Replace] Web",
+        "[Replace] API"
+      ],
+      "image": "assets/project2.png",
+      "links": [
+        {
+          "label": "Live",
+          "url": "https://[your-username].github.io/[project]/"
+        }
+      ]
+    },
+    {
+      "title": "[Replace] Project Three Title",
+      "desc": "[Replace] Highlight the interesting part \u2014 performance, UX, or tech.",
+      "tags": [
+        "[Replace] Python",
+        "[Replace] Data"
+      ],
+      "image": "assets/project3.png",
+      "links": [
+        {
+          "label": "Repo",
+          "url": "https://github.com/[your-username]/[repo-name]"
+        }
+      ]
+    }
+  ],
+  "skill_sections": [
+    {
+      "title": "Software Development (Primary: Java)",
+      "text": "Creative Software Development — Passion for designing and building unique programs from the ground up. I enjoy turning ideas into functional tools with a personal touch, blending creativity with solid coding practices.",
+      "image": "assets/skill1.png",
+      "links": [
+        {
+          "label": "See projects",
+          "url": "#projects"
+        }
+      ]
+    },
+    {
+      "title": "Individual / Team Development",
+      "text": "Designed and managed server systems; created custom games both individually and collaboratively with a large group, occasionally assisting in project leadership with other creators and developers — particularly within Minecraft-based projects.",
+      "image": "assets/skill2.png",
+      "links": [
+        {
+          "label": "Open repo",
+          "url": "#projects"
+        }
+      ]
+    },
+    {
+      "title": "Interdepartmental Support and Service",
+      "text": "Provided customer support with a focus on problem solving and effective communication between departments to ensure smooth operations and client satisfaction.",
+      "image": "assets/skill3.png",
+      "links": [
+        {
+          "label": "Contact",
+          "url": "mailto:donhnt@outlook.com"
+        }
+      ]
+    }
+  ]
+}
