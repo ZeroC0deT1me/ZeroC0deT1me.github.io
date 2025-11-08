@@ -1,74 +1,63 @@
 {
-  "name": "[Replace: Your Name]",
-  "tagline": "[Replace: Your headline (e.g., Java Developer \u2022 Minecraft Modder)]",
-  "location": "[Replace: City, Country]",
-  "email": "replace-me@example.com",
+  "name": "Pakin Kajonsuksanti",
+  "tagline": "Developer",
+  "location": "Bellingham, Washington",
+  "email": "donhnt@outlook.com",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[your-username]"
-    },
-    {
-      "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/[your-handle]/"
-    },
-    {
-      "name": "X",
-      "url": "https://x.com/[your-handle]"
+      "url": "https://github.com/ZeroC0deT1me"
     }
   ],
-  "about": "[Replace: Short intro about you \u2014 what you build, your focus areas, and what you're exploring now.]",
+  "about": "Hi, I’m Deon — a student pursuing a degree in Cybersecurity and Computer Information Systems. I love coding, building tools that make life easier, and contributing to my community. Outside of tech, I do voice acting as a hobby and dabble in graphic design and 3D modeling.",
   "skills": [
-    "[Replace] Java",
-    "[Replace] Minecraft Modding",
-    "[Replace] Linux",
-    "[Replace] Git",
-    "[Replace] HTML/CSS",
-    "[Replace] Python"
+    "Java",
+    "Customer Service"
+    "Minecraft Project",
   ],
   "projects": [
     {
-      "title": "[Replace] Project One Title",
-      "desc": "[Replace] One-sentence summary of what this project does and why it matters.",
+      "title": "Software Development (Primary: Java)",
+      "desc": "Creative Software Development — Passion for designing and building unique programs from the ground up. I enjoy turning ideas into functional tools with a personal touch, blending creativity with solid coding practices.",
       "tags": [
-        "[Replace] Java",
-        "[Replace] Desktop"
+        "Java",
+        "Swing UI"
       ],
       "image": "assets/project1.png",
       "links": [
         {
           "label": "Repo",
-          "url": "https://github.com/[your-username]/[repo-name]"
+          "url": "https://github.com/ZeroC0deT1me"
         }
       ]
     },
     {
-      "title": "[Replace] Project Two Title",
-      "desc": "[Replace] Brief description, outcomes, and your role.",
+      "title": "Individual / Team Development",
+      "desc": "Designed and managed server systems; created custom games both individually and collaboratively with a large group, occasionally assisting in project leadership with other creators and developers — particularly within Minecraft-based projects.",
       "tags": [
-        "[Replace] Web",
-        "[Replace] API"
+        "Development",
+        "Team Management / Collaboration"
       ],
       "image": "assets/project2.png",
       "links": [
         {
           "label": "Live",
-          "url": "https://[your-username].github.io/[project]/"
+          "url": "https://github.com/ZeroC0deT1me"
         }
       ]
     },
     {
-      "title": "[Replace] Project Three Title",
-      "desc": "[Replace] Highlight the interesting part \u2014 performance, UX, or tech.",
+      "title": "Interdepartmental Support and Service",
+      "desc": "Provided customer support with a focus on problem solving and effective communication between departments to ensure smooth operations and client satisfaction.",
       "tags": [
-        "[Replace] Python",
-        "[Replace] Data"
+        "Customer Service",
+        "IT Department"
       ],
       "image": "assets/project3.png",
       "links": [
         {
           "label": "Repo",
-          "url": "https://github.com/[your-username]/[repo-name]"
+          "url": "https://github.com/ZeroC0deT1me"
         }
       ]
     }
