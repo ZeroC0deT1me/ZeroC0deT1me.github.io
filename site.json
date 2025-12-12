@@ -31,7 +31,7 @@
       "links": [
         {
           "label": "See projects",
-          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
+          "url": "#projects"
         }
       ]
     },
@@ -46,7 +46,7 @@
       "links": [
         {
           "label": "Open repo",
-          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
+          "url": "#projects"
         }
       ]
     },
