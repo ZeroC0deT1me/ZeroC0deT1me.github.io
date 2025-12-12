@@ -61,40 +61,5 @@
         }
       ]
     }
-  ],
-  "skill_sections": [
-    {
-      "title": "Software Development (Primary: Java)",
-      "text": "Creative Software Development — Passion for designing and building unique programs from the ground up. I enjoy turning ideas into functional tools with a personal touch, blending creativity with solid coding practices.",
-      "image": "assets/skill1.png",
-      "links": [
-        {
-          "label": "See projects",
-          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
-        }
-      ]
-    },
-    {
-      "title": "Individual / Team Development",
-      "text": "Designed and managed server systems; created custom games both individually and collaboratively with a large group, occasionally assisting in project leadership with other creators and developers — particularly within Minecraft-based projects.",
-      "image": "assets/skill2.png",
-      "links": [
-        {
-          "label": "Open repo",
-          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
-        }
-      ]
-    },
-    {
-      "title": "Interdepartmental Support and Service",
-      "text": "Provided customer support with a focus on problem solving and effective communication between departments to ensure smooth operations and client satisfaction.",
-      "image": "assets/skill3.png",
-      "links": [
-        {
-          "label": "Contact",
-          "url": "mailto:donhnt@outlook.com"
-        }
-      ]
-    }
   ]
 }
