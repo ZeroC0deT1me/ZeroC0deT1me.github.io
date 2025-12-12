@@ -27,7 +27,7 @@
         "Java",
         "Swing UI"
       ],
-      "image": "assets/project1.png",
+      "image": "assets/skill1.png",
       "links": [
         {
           "label": "See projects",
@@ -42,7 +42,7 @@
         "Development",
         "Team Management / Collaboration"
       ],
-      "image": "assets/project2.png",
+      "image": "assets/skill2.png",
       "links": [
         {
           "label": "Open repo",
@@ -57,7 +57,7 @@
         "Customer Service",
         "IT Department"
       ],
-      "image": "assets/project3.png",
+      "image": "assets/skill3.png",
       "links": [
         {
           "label": "Contact",
