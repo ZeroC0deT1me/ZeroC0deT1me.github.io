@@ -31,7 +31,7 @@
       "links": [
         {
           "label": "See projects",
-          "url": "#projects"
+          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
         }
       ]
     },
@@ -46,7 +46,7 @@
       "links": [
         {
           "label": "Open repo",
-          "url": "#projects"
+          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
         }
       ]
     },
@@ -60,7 +60,7 @@
       "image": "assets/project3.png",
       "links": [
         {
-          "label": "LinkedIn",
+          "label": "Contact",
           "url": "https://www.linkedin.com/in/pakin-kajonsuksanti-b59b3235a/"
         }
       ]
