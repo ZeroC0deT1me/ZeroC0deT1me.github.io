@@ -159,10 +159,7 @@
       </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="grid" id="projects"></div>
-    </section>
+
 
     <section>
       <div class="card">
@@ -250,7 +247,6 @@
         const links = document.createElement('div');
         links.className = 'links';
 
-        let githubUrl = null;
         (p.links || []).forEach(l => {
           const a = document.createElement('a');
           a.className = 'cta';
@@ -259,27 +255,7 @@
           a.rel = "noopener";
           a.textContent = l.label;
           links.appendChild(a);
-          if (!githubUrl && typeof l.url === 'string' && l.url.includes('github.com')) {
-            githubUrl = l.url;
-          }
         });
-
-        if (githubUrl) {
-          const gh = document.createElement('a');
-          gh.className = 'cta';
-          gh.href = githubUrl;
-          gh.target = '_blank';
-          gh.rel = 'noopener';
-          const icon = document.createElement('img');
-          icon.src = 'assets/github.svg';
-          icon.alt = '';
-          icon.className = 'icon';
-          gh.appendChild(icon);
-          const span = document.createElement('span');
-          span.textContent = 'Check GitHub';
-          gh.appendChild(span);
-          links.appendChild(gh);
-        }
 
         card.appendChild(links);
 
