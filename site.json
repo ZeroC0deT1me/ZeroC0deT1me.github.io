@@ -7,6 +7,10 @@
     {
       "name": "GitHub",
       "url": "https://github.com/ZeroC0deT1me"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pakin-kajonsuksanti-b59b3235a/"
     }
   ],
   "about": "Hi, I'm Deon — a student pursuing a degree in Cybersecurity and Computer Information Systems. I love coding, building tools that make life easier, and contributing to my community. Outside of tech, I do voice acting as a hobby and dabble in graphic design and 3D modeling.",
@@ -57,7 +61,7 @@
       "links": [
         {
           "label": "Contact",
-          "url": "mailto:donhnt@outlook.com"
+          "url": "https://www.linkedin.com/in/pakin-kajonsuksanti-b59b3235a/"
         }
       ]
     }
