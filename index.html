@@ -147,7 +147,7 @@
               <div class="title">Interdepartmental Support and Service</div>
               <div class="text">Provided customer support with a focus on problem solving and effective communication between departments to ensure smooth operations and client satisfaction.</div>
               <div class="actions">
-                <a class="cta" href="mailto:replace-me@example.com">Contact</a>
+                <a class="cta" href="https://www.linkedin.com/in/pakin-kajonsuksanti-b59b3235a/" target="_blank" rel="noopener">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -211,56 +211,7 @@
         skills.appendChild(span);
       });
 
-      // Projects
-      const projects = document.getElementById('projects');
-      projects.innerHTML = '';
-      (data.projects || []).forEach(p => {
-        const card = document.createElement('div');
-        card.className = 'card project';
 
-        const img = document.createElement('img');
-        img.className = 'media';
-        img.src = p.image || 'assets/project1.png';
-        img.alt = p.title;
-        card.appendChild(img);
-
-        const title = document.createElement('div');
-        title.className = 'title';
-        title.textContent = p.title;
-        card.appendChild(title);
-
-        const desc = document.createElement('div');
-        desc.className = 'desc';
-        desc.textContent = p.desc;
-        card.appendChild(desc);
-
-        const tags = document.createElement('div');
-        tags.className = 'tags';
-        (p.tags || []).forEach(t => {
-          const tag = document.createElement('span');
-          tag.className = 'tag';
-          tag.textContent = t;
-          tags.appendChild(tag);
-        });
-        card.appendChild(tags);
-
-        const links = document.createElement('div');
-        links.className = 'links';
-
-        (p.links || []).forEach(l => {
-          const a = document.createElement('a');
-          a.className = 'cta';
-          a.href = l.url;
-          a.target = "_blank";
-          a.rel = "noopener";
-          a.textContent = l.label;
-          links.appendChild(a);
-        });
-
-        card.appendChild(links);
-
-        projects.appendChild(card);
-      });
 
     } catch (e) {
       console.error('Failed to load site.json', e);
