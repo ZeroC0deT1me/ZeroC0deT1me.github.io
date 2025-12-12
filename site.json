@@ -9,11 +9,11 @@
       "url": "https://github.com/ZeroC0deT1me"
     }
   ],
-  "about": "Hi, I’m Deon — a student pursuing a degree in Cybersecurity and Computer Information Systems. I love coding, building tools that make life easier, and contributing to my community. Outside of tech, I do voice acting as a hobby and dabble in graphic design and 3D modeling.",
+  "about": "Hi, I'm Deon — a student pursuing a degree in Cybersecurity and Computer Information Systems. I love coding, building tools that make life easier, and contributing to my community. Outside of tech, I do voice acting as a hobby and dabble in graphic design and 3D modeling.",
   "skills": [
     "Java",
-    "Customer Service"
-    "Minecraft Project",
+    "Customer Service",
+    "Minecraft Project"
   ],
   "projects": [
     {
@@ -26,8 +26,8 @@
       "image": "assets/project1.png",
       "links": [
         {
-          "label": "Repo",
-          "url": "https://github.com/ZeroC0deT1me"
+          "label": "See projects",
+          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
         }
       ]
     },
@@ -41,8 +41,8 @@
       "image": "assets/project2.png",
       "links": [
         {
-          "label": "Live",
-          "url": "https://github.com/ZeroC0deT1me"
+          "label": "Open repo",
+          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
         }
       ]
     },
@@ -56,8 +56,8 @@
       "image": "assets/project3.png",
       "links": [
         {
-          "label": "Repo",
-          "url": "https://github.com/ZeroC0deT1me"
+          "label": "Contact",
+          "url": "mailto:donhnt@outlook.com"
         }
       ]
     }
@@ -70,7 +70,7 @@
       "links": [
         {
           "label": "See projects",
-          "url": "#projects"
+          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
         }
       ]
     },
@@ -81,7 +81,7 @@
       "links": [
         {
           "label": "Open repo",
-          "url": "#projects"
+          "url": "https://github.com/ZeroC0deT1me?tab=repositories"
         }
       ]
     },
